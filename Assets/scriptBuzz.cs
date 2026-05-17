@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class scriptBuzz : MonoBehaviour
 {
+    public GameObject tiroRaioLaser;
+
     private Rigidbody2D rbd;
+    private AudioSource som;
     public float vel;
 
     private float altura;
@@ -14,6 +17,7 @@ public class scriptBuzz : MonoBehaviour
     void Start()
     {
         rbd = this.GetComponent<Rigidbody2D>();
+        som = this.GetComponent<AudioSource>();
         vel = 10;
 
         altura = Camera.main.orthographicSize;
@@ -45,6 +49,16 @@ public class scriptBuzz : MonoBehaviour
         } else if (transform.position.y < -5)
         {
             transform.position = new Vector2(transform.position.x, -altura);
+        }
+
+
+        // instanciando o novo tiro
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) // quando pressiona (botão para baixo) a tecla de espaço ou o botão direito do mouse, libera o tiro
+        {
+            // som do tiro
+            som.Play();
+            
+            Instantiate(tiroRaioLaser, transform.position, Quaternion.identity);
         }
     }
 }
