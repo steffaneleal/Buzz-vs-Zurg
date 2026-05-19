@@ -9,6 +9,7 @@ public class scriptNaveZurg : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        scriptPlacar.addPlacar(100);
         Destroy(collision.gameObject);
         Destroy(gameObject);
     }
