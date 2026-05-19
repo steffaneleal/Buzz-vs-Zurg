@@ -7,6 +7,13 @@ public class scriptNaveZurg : MonoBehaviour
     private Rigidbody2D rbd;
     public float vel = 5;
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
