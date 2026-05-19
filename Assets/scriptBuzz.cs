@@ -12,6 +12,7 @@ public class scriptBuzz : MonoBehaviour
 
     private float altura;
     private float largura;
+    private float alturaBuzz;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,9 @@ public class scriptBuzz : MonoBehaviour
 
         altura = Camera.main.orthographicSize;
         largura = altura * Camera.main.aspect; // regra de 3, se precisar alterar por mudar a resolução da tela, deve ser colocado no Update
+
+        // descobrindo a altura do Buzz
+        alturaBuzz = GetComponent<SpriteRenderer>().bounds.size.y;
     }
 
     // Update is called once per frame
@@ -46,10 +50,10 @@ public class scriptBuzz : MonoBehaviour
         if (transform.position.y > 0)
         {
             transform.position = new Vector2(transform.position.x, 0);
-        } else if (transform.position.y < -5)
+        } else if (transform.position.y < -altura + (alturaBuzz / 2))
         {
-            transform.position = new Vector2(transform.position.x, -altura);
-        }
+            transform.position = new Vector2(transform.position.x, -altura + (alturaBuzz / 2));
+        } // alturaBuzz / 2 pq o meio do game Object é onde fica o centro
 
 
         // instanciando o novo tiro
@@ -58,7 +62,8 @@ public class scriptBuzz : MonoBehaviour
             // som do tiro
             som.Play();
             
-            Instantiate(tiroRaioLaser, transform.position, Quaternion.identity);
+            Vector2 pos = new Vector2(transform.position.x, transform.position.y + (alturaBuzz/2));
+            Instantiate(tiroRaioLaser, pos, Quaternion.identity);
         }
     }
 }
