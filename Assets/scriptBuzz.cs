@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scriptBuzz : MonoBehaviour
 {
@@ -13,6 +14,20 @@ public class scriptBuzz : MonoBehaviour
     private float altura;
     private float largura;
     private float alturaBuzz;
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // verifica se o que encostou na nave foi o próprio tiro
+        if (collision.gameObject.CompareTag("Tiro"))
+        {
+            return; // Sai da função aqui e não executa o que está abaixo
+        }
+
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
+        SceneManager.LoadSceneAsync(2);
+    }
+
 
     // Start is called before the first frame update
     void Start()

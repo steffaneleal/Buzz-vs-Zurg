@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7c078be7eb95fd74683d422cefa235f9
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/buzzvszurg.unity
+    guid: 1669a02be412e794f9075fe19728ec3b
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: fe0cfdf0d22958549810beed48f72e8b
+  - enabled: 1
+    path: Assets/Scenes/Pausa.unity
+    guid: b2fc4e2a53a15304293c5d6943c70331
   m_configObjects: {}

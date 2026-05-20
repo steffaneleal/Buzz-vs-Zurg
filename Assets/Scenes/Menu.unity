@@ -372,6 +372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da94eeefd11a82478e456d0e73c91a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  botaoIni: {fileID: 771829551}
+  botaoSair: {fileID: 471575818}
+  tempoEspera: 2.5
 --- !u!1 &405282034
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da94eeefd11a82478e456d0e73c91a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  botaoIni: {fileID: 0}
+  botaoSair: {fileID: 0}
+  tempoEspera: 2.5
 --- !u!4 &648055475
 Transform:
   m_ObjectHideFlags: 0
@@ -816,8 +822,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255615
+  m_fontColor: {r: 1, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -920,7 +926,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1042,8 +1048,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282645241
+  m_fontColor: {r: 0.97647065, g: 0.9803922, b: 0.2627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

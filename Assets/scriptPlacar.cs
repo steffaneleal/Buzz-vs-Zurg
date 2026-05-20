@@ -11,6 +11,7 @@ public class scriptPlacar : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        placar = 0;
         texto = GameObject.Find("txtPlacar");
     }
 
@@ -18,6 +19,11 @@ public class scriptPlacar : MonoBehaviour
     {
         placar += a;
         texto.GetComponent<TMP_Text>().text = "Placar: " + placar;
+    }
+
+    public static int getPlacar()
+    {
+        return placar;
     }
 
 
