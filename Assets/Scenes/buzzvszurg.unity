@@ -346,7 +346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 227537297}
   - component: {fileID: 227537296}
-  - component: {fileID: 227537295}
   m_Layer: 0
   m_Name: ControladorJogo
   m_TagString: Untagged
@@ -354,18 +353,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &227537295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227537294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e481ed30f63e32a46b05180b23298ca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &227537296
 MonoBehaviour:
   m_ObjectHideFlags: 0

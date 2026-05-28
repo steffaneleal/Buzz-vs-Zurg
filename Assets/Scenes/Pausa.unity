@@ -271,6 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da94eeefd11a82478e456d0e73c91a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  botaoIni: {fileID: 0}
+  botaoSair: {fileID: 0}
+  tempoEspera: 10
 --- !u!1 &405282034
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da94eeefd11a82478e456d0e73c91a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  botaoIni: {fileID: 0}
+  botaoSair: {fileID: 0}
+  tempoEspera: 10
 --- !u!4 &1209559126
 Transform:
   m_ObjectHideFlags: 0
